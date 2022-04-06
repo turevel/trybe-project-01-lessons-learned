@@ -2,9 +2,14 @@
   margin: 0 auto;
   padding: 0;
   font-family: Open Sans, sans-serif;
+  line-height: 1.5em;
+  box-sizing: border-box;
 }
 
-body { background-color: rgb(253, 251, 251); }
+body {
+  background-color: rgb(253, 251, 251);
+  --color-theme: teal;
+}
 
 #cabecalho {
   position: fixed;
@@ -20,7 +25,7 @@ body { background-color: rgb(253, 251, 251); }
 }
 
 #navegador {
-  background-color: red;
+  background-color: var(--color-theme);
   padding: 10px 30px;
 }
 
@@ -34,15 +39,59 @@ body { background-color: rgb(253, 251, 251); }
   width: 80%;
   background-color: rgb(236, 239, 241);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#principal section:nth-child(even) {
+  background-color: rgb(207, 216, 220);
+}
+
+#principal li {
+  list-style-position: inside;
+}
+
+/* Seção de apresentação */
+#apresentacao {
+  text-align: center;
   padding: 30px;
 }
 
-#apresentacao {
-  text-align: center;
+#minha_foto{
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.flex {
+#apresentacao h2 {
+  font-size: 2em;
+}
+
+#apresentacao a {
+  text-decoration: none;
+  color: var(--color-theme);
+}
+
+/* Configurando o display padrão das seções */
+.flex-display {
   display: flex;
+}
+
+.elemento{
+  padding: 30px;
+}
+
+.elemento h3 {
+  color: var(--color-theme);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.bloco-tema {
+  background-color: var(--color-theme) !important;
+  color: whitesmoke;
+}
+
+.bloco-tema h3 {
+  color: whitesmoke;
 }
 
 .lado-esquerdo {
@@ -51,10 +100,76 @@ body { background-color: rgb(253, 251, 251); }
 
 .lado-direito {
   width: 40%;
-  background-color: blue;
-  box-sizing: border-box;
 }
 
-#principal li {
-  list-style-position: inside;
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: rgb(207, 216, 220);
+  margin: 20px;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 4px 10px;
+  width: 150px;
+}
+
+th {
+  text-align: center;
+}
+
+tr th {
+  background-color: rgb(93, 98, 100);
+  color: whitesmoke;
+}
+
+tr td {
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(236, 239, 241);
+}
+
+tr td:nth-child(n+2){
+  text-align: center;
+}
+
+#titulo-tabela {
+  background-color: orangered;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.fa-check {
+  color: darkgreen;
+}
+
+.fa-close{
+  color: darkred;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 0 10px;
+}
+
+.stretch {
+  align-items: stretch;
+  background-color: transparent;
+}
+
+.licoes_a_aprender {
+  width: 100%;
+  border-radius: 0 0 0 10px;
+}
+
+.passagem {
+  border-radius: 0 0 10px 0;
+}
+
+.passagem h3 {
+  text-align: center;
 }
