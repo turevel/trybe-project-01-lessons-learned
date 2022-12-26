@@ -1,13 +1,17 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Lessons Learned
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Este projeto tem como objetivo mostrar as lições de HTML e CSS aprendidas nos dois primeiros blocos do curso de desenvolvimento web na Trybe.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+## Recursos
+
+- Exemplos de código HTML e CSS;
+- Alguns conceitos fundamentais de HTML e CSS;
+- Exercícios práticos para aplicar os conceitos aprendidos.
+
+## Requisitos
+
+Para acessar este projeto, você precisará de um navegador web.
+
+## Uso
+
+Para começar a utilizar este projeto, basta clonar o repositório e abrir o arquivo `index.html` no seu navegador.
